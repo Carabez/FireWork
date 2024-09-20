@@ -1,0 +1,70 @@
+1 VERSIONINFO
+FILEVERSION 1,2015,10,20
+PRODUCTVERSION 1,2015,10,20
+FILEOS 0x00000004
+FILETYPE 0x00000001
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "FileVersion", "1,2015,10,20\0"
+      VALUE "ProductVersion", "1,2015,10,20\0"
+      VALUE "ScreenSaver Version by", "www.carabez.com\0"
+      VALUE "FileDescription", "Apocalypse Firewoks Screen Saver.\0"
+      VALUE "InternalName", "Firework\0"
+      VALUE "OriginalFilename", "Firework\0"
+      VALUE "ProductName", "Firework\0"
+      VALUE "LegalCopyright", "©2012 Ronybc\0"
+      VALUE "LegalTrademarks", "©2012 Eonybc\0"
+      VALUE "Comments", "Original code by Rony B Chandran\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 0x04E4
+  END
+END
+1   24  DISCARDABLE "Firework.xml"
+/* MANDATORY string required in .RC file
+ * This string should contain a less than 25 char name/description of the
+ * screen saver.  This string is what will be seen by the user in the Control
+ * Panel's Desktop applet screen saver listbox.
+ */
+#define IDS_DESCRIPTION      1
+STRINGTABLE
+BEGIN
+    IDS_DESCRIPTION,   "Apocalypse Firewoks"
+END
+/* Icon resource ID.
+ *
+ * This should be the first icon used and must have this resource number.
+ * This is needed as the first icon in the file will be grabbed
+ */
+#define ID_APP      100
+ID_APP ICON MOVEABLE PURE LOADONCALL DISCARDABLE "FW03.ICO"
+
+600 MENUEX MOVEABLE IMPURE LOADONCALL DISCARDABLE
+BEGIN
+    POPUP "&Fire", , , 0
+    BEGIN
+        MENUITEM "&Reset",1000
+        MENUITEM "&Exit ",1010
+    END
+    POPUP "&Effects", , , 0
+    BEGIN
+        MENUITEM "&Light and Smoke (blur MMX) ",1220
+        MENUITEM "&Gravity and Atmosphere ",1200
+        MENUITEM "&Color Shifting Chemical (Far view)",1210
+    END
+    POPUP "&Interval", , , 0
+    BEGIN
+        MENUITEM "&Delayed",1300
+        MENUITEM "&Violent",1310
+    END
+    POPUP "&Help", , , 0
+    BEGIN
+        MENUITEM "&About",1400
+    END
+END
+

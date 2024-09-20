@@ -1,0 +1,26 @@
+2011 Diciembre 05.
+
+El porque:
+=========
+Protector de pantalla que simula fuegos pirotécnicos:
+
+Considero al protector de pantalla, que después de cierto ponga a hibernar al equipo, indispensable.
+Pero ODIO cuando:
+-Estoy leyendo un PDF y el protector de pantalla se activa.
+-Tengo una aplicación crítica (respaldos) y el protetor de pantalla suspende el equipo a media faena.
+-Mi downloader favorito no tiene manera de prevenir entrar en hibernación.
+-Estoy trabajando en máquinas virtuales y el protector de pantalla hace lo suyo.
+
+Así que tomé el código de Rony B Chandran y lo convertí en "protector de pantalla", con opciones avanzadas como Impedir que se ejecute si hay CIERTAS apliaciones corriendo.
+
+Instalación:
+============
+Extraer y copiar Fireworks.scr en el directorio System32 de Windows o en el directorio sysWOW64 si tiene una versión de Windows x64.
+
+Desinstalación: Borre TODO el contenido del directorio de System32.... perdón, quise decir borre el archivo fireworks.scr del directorio system32.
+
+Gracias:
+========
+
+Francisco J. Carabez
+http://www.carabez.com
